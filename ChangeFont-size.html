@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background: #f9f9f9;
+    }
+    #text {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #007BFF;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  
+  <p id="text">Click the button to change my size!</p>
+  <button onclick="document.getElementById('text').style.fontSize='30px'">Bigger</button>
+  <button onclick="document.getElementById('text').style.fontSize='14px'">Smaller</button>
+
+</body>
+</html>

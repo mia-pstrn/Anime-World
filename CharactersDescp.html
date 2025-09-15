@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+      
+    button:hover {
+      background: #FCB53B;
+    }
+    #description {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+​
+  <h1>Team 7 of Naruto Shippuden Characters</h1>
+  <button onclick="showDescription('Naruto')">Naruto</button>
+  <button onclick="showDescription('Sasuke')">Sasuke</button>
+  <button onclick="showDescription('Sakura')">Sakura</button>
+  
+  <div id="description"></div>
+​
+  <script>
+    function showDescription(character) {
+      let desc = "";
+      if (character === "Naruto") {
+        desc = "Naruto Uzumaki is a ninja from Konoha who dreams of becoming Hokage.";
+      } else if (character === "Sasuke") {
+        desc = "Sasuke Uchiha is Naruto's rival, known for his Sharingan and quest for revenge.";
+      } else if (character === "Sakura") {
+        desc = "Sakura Haruno is a strong kunoichi with excellent medical ninjutsu skills.";
+      }
+      document.getElementById("description").innerText = desc;
+    }
+  </script>
+</body>
+</html>
+​

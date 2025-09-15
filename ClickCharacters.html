@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 30px;
+    }
+    img {
+      width: 150px;  
+      height: 150px;
+      object-fit: cover; 
+      margin: 10px; 
+      border-radius: 10px; 
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    img:hover {
+      transform: scale(1.1); 
+    }
+    #desc {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>Click a Character</h2>
+
+  <!-- Pictures -->
+  <img src="https://cdn.pixabay.com/photo/2018/10/19/05/12/naruto-3757871_640.jpg" 
+       alt="Naruto" 
+       onclick="showDescription('Hi I\'m Naruto Uzumaki!')">
+
+  <img src="https://cdn.pixabay.com/photo/2018/10/01/10/15/male-3715813_640.jpg" 
+       alt="Sasuke" 
+       onclick="showDescription('I\'m Sasuke Uchiha!')">
+
+  <img src="https://cdn.pixabay.com/photo/2018/12/23/09/47/young-3890799_640.jpg" 
+       alt="Hinata" 
+       onclick="showDescription('Hello I\'m Hinata Hyuga')">
+
+  <p id="desc"></p>
+
+  <script>
+    function showDescription(text) {
+      document.getElementById("desc").innerHTML = text;
+    }
+  </script>
+</body>
+</html>
